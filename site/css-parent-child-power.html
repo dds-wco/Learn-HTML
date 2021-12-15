@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Parent - Child Power</title>
+    <style>
+        section > article {
+            color: green;
+            font-size: 24px;
+        }
+        section > h2 {/*apply toh h2 which direct child of section*/
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector</h1>
+    <section>
+        <h2>Subheading 1</h2>
+        <div>
+            <article>
+                Article which is within section->div
+            </article>
+        </div>
+    </section>
+    <section>
+        <article>Article as direct Child of section</article>
+    </section>
+    <h2>Subheading h2</h2>
+</body>
+</html>

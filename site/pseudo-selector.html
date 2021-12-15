@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Selector</title>
+    <style>
+        div div:nth-child(odd) {
+            background-color: aquamarine;
+        }
+        div div:nth-child(4):hover {
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        div div:hover {
+            text-decoration: underline;
+            background-color: aqua;
+            font-size: 40px;
+            width: fit-content;
+            cursor: pointer;
+        }
+        header li {
+            list-style: none;
+        }
+        header li:nth-child(3) {
+            font-size: 30px;
+        }
+        a:link { 
+            text-decoration: none;
+            background-color: gold;
+            display: block;
+            width: 200px;
+            border: 2px solid aqua;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+            text-transform: uppercase;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learning Web Development</h1>
+        <ol>
+            <li><a href="www.google.com">HTML</a></li>
+            <li><a href="www.google.com">CSS</a></li>
+            <li><a href="www.google.com">Javascript</a></li>
+            <li><a href="www.google.com">Angular</a></li>
+            <li><a href="www.google.com">React</a></li>
+        </ol>
+     
+    </header>
+    <div>
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+        <div>DIV 6</div>
+        <div>DIV 7</div>
+        <div>DIV 8</div>
+        <div>DIV 9</div>
+        <div>DIV 10</div>
+    </div>
+</body>
+</html>

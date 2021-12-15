@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adjacent and General sibling</title>
+    <style>
+        li + li {
+            color: red;
+        }
+        p ~ span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Adjacent sibling</h1>
+        <ul>
+            <li>Whey</li>
+            <li>Creatine</li>
+            <li>Oats</li>
+            <li>Dark Chocolate</li>
+        </ul>
+    </div>
+    <div>
+        <h1>General sibling</h1>
+        <span>This is not red.</span>
+        <p>Here is a paragraph.</p>
+        <code>Here is some code.</code>
+        <span>And here is a red span!</span>
+        <span>And this is a red span!</span>
+        <div>
+            <span>This is not red span</span>
+        </div>
+        <span>This is red span</span>
+        <code>More code...</code>
+        <div> How are you? </div>
+        <p> Whatever it may be, keep smiling. </p>
+        <h1> Dream big </h1>
+        <h2> that's all. </h2>
+        <span>And yet again this is a red span!</span>
+    </div>
+    <span>This is not red span</span>
+</body>
+</html>
