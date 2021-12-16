@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Specificity</title>
+    <style>
+        header.navigation p{
+            color: blue;
+        }
+        p.blurb {
+            color: red;
+        }
+        p {
+            color: aquamarine !important;/*This will neglect specificitya and slam this rule*/
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation">
+        <p class="blurb">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laboriosam sed placeat quisquam ullam, fuga alias unde inventore dolorem esse sunt?
+            Numquam saepe mollitia eligendi similique unde commodi expedita aspernatur magnam?
+        </p>
+    </header>
+</body>
+</html>
