@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Box Model</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blueviolet;
+        }
+        #outer-div {
+            width: 500px;
+            height: 50px;
+            padding: 15px;
+            margin: 20px;
+            border: 2px solid salmon;
+            box-sizing: content-box;
+        }
+        #inner-div {
+            width: 400px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Box Model in CSS</h1>
+    </header>
+    <div id="outer-div">
+        This is Outer Div Text
+        <div id="inner-div">
+            This is text in inner div
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem quia provident, eveniet quasi repellendus ab ea. Sed repudiandae ad iste incidunt similique earum sit sunt consectetur nam corrupti. Ullam.
+        </div>
+    </div>
+</body>
+</html>
