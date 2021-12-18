@@ -14,21 +14,21 @@
             margin-bottom: 15px;
         }
         .container {
-            position: absolute;
+            /*position: absolute;*/
             height: 3000px;
-
+            margin: 40px;
         }
         #p1 {
             background-color: lightcoral;
-            position: fixed;
-            top: 10px;
-            left: 50px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
         }
         #p2 {
             background-color: lightskyblue;
             position: sticky;/*Sticky to the Viewport*/
-            top: 20px;
-            right: 2px;
+            top: 0px;
+            left: 2px;
         }
         #p3 {
             background-color: lightgreen;
@@ -41,7 +41,7 @@
 <body>
     <h1>CSS Positioning Elements Relative and Absolute</h1>    
     <div class="container">
-        <p id="p1">Box 1 - Fixed</p>
+        <p id="p1">Box 1 - Absolute</p>
         <p id="p2">Box 2 - Sticky</p>
         <p id="p3">Box 3</p>
         <p id="p4">Box 4</p>
