@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Floating</title>
+    <style>
+        div {
+            background-color: lightblue;
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+        }
+        #p1 {
+            background-color: lightcoral;
+            float: left;
+            clear: both;
+        }
+        #p2 {
+            background-color: lightgoldenrodyellow;
+            float: right;
+            clear: both;
+        }
+        #p3 {
+            background-color: lightgreen;
+            float: left;
+            clear:  both;
+        }
+        #p4 {
+            background-color: lightseagreen;
+            float: right;
+            clear: both;
+        }
+        div > section {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Floating</h1>    
+    <div>
+        <p id="p1">Box 1</p>
+        <p id="p2">Box 2</p>
+        <p id="p3">Box 3</p>
+        <p id="p4">Box 4</p>
+        <section>Just a random text after paraggraphs</section>
+    </div>
+</body>
+</html>

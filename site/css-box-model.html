@@ -10,7 +10,7 @@
         }
         #outer-div {
             width: 500px;
-            height: 50px;
+            height: fit-content;
             padding: 15px;
             margin: 20px;
             border: 2px solid salmon;
@@ -20,18 +20,49 @@
             width: 400px;
             margin: 30px;
         }
+        .sibling {
+            width: fit-content;
+            height: 80px;
+            overflow: auto;
+            border: 5px solid khaki;
+        }
+        div.parent > .sibling {
+            background-color: aquamarine;
+            width: 500px;
+            display: inline-block;
+            border: 5px solid salmon;
+            box-sizing: content-box;
+            padding: 10px;
+            margin: 20px;
+            height: 92px;
+        }
+        .parent {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Box Model in CSS</h1>
     </header>
-    <div id="outer-div">
+    <div id="outer-div">        
         This is Outer Div Text
-        <div id="inner-div">
+        <div class="sibling" id="inner-div-2">
             This is text in inner div
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem quia provident, eveniet quasi repellendus ab ea. Sed repudiandae ad iste incidunt similique earum sit sunt consectetur nam corrupti. Ullam.
         </div>
+    </div>
+    <div class="parent">
+        <div class="sibling" id="inner-div-2">
+            This is text in inner div
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis nam magni omnis similique quaerat! Sint aut quia a consectetur quam saepe nam. Totam eaque inventore dolores dignissimos dolorum sapiente?
+        </div>
+        <div class="sibling" id="inner-div-2">
+            This is text in inner div
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+
     </div>
 </body>
 </html>
