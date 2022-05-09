@@ -4,3 +4,129 @@ body {
     background-color: #61122f;
     color: #fff;
 }
+
+#logo-img {
+    background: url('../images/Cafe_Logo.png') no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
+.container-fluid {
+    background-color: #f6b319;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.navbar-brand a:hover, .navbar-branda:focus {
+    text-decoration: none;
+}
+
+.navbar-brand  p{
+    text-transform: uppercase;
+}
+.navbar-brand p span {
+    vertical-align: middle;
+}
+.navbar-header {
+    margin-left: 50px;
+}
+
+.nav-menu-items {
+    flex-basis: 0%;
+    margin-left: 40%;
+}
+.nav-menu-items > ul {
+    list-style: none;
+}
+.nav-menu-items > p {
+    display: inline;
+    margin: 10px;
+}
+
+@media (min-width:1200px) {
+    .main-content-jumbotron {
+        background-image: url('../images/DineIn_Jumbotron_1200.png');
+        height: 675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }
+}
+
+@media (min-width:978px) and (max-width:1199px) {
+    .main-content-jumbotron {
+        background-image: url('../images/DineIn_Jumbotron_992.png') ;
+        height: 675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }
+}
+
+@media (min-width:500px) and (max-width:977px) {
+    .main-content-jumbotron {
+        background-image: url('../images/DineIn_Jumbotron_992.png');
+        height: 675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background-image: url('../images/Menu_image.jpg');
+    background-position: center;
+}
+
+#specials-tile {
+    background-image: url('../images/Specials_image.jpg');
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: black;
+    color: #cccccc;
+    opacity: 0.8;
+}
+
+footer  {
+    background-color: black;
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+
+.category-tile {
+    margin: 5px;
+    border: 2px solid white;
+}
+.category-tile img {
+    height: 200px;
+    width: 200px;
+}
+
+
+.category-tile  span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
